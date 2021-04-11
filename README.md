@@ -30,5 +30,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 We've implemented 2 kinds of forms:
 
-- one with tooltips that gets triggered after 1s that a user hover a field
-- another with fields descriptions aside, that get bold on fields focus event
+- one with tooltips that gets fired 1 second after a user hovers over a field
+- another with side field descriptions, which becomes bold during the field focus event
