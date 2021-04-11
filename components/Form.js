@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FlexCenter, FlexCol, FlexRow } from './Flex';
 
-const Field = ({ label, ToolTip }) => {
+const Field = ({ label, ToolTip, onFocus, onBlur }) => {
   const [tooltipIsActive, setTooltipIsActive] = useState(false);
   return (
     <div className="relative w-full">
@@ -15,7 +15,11 @@ const Field = ({ label, ToolTip }) => {
         <label className="w-32 h-full px-3 text-green-800 bg-green-300 rounded-l-xl">
           <FlexCenter className="h-full">{label}</FlexCenter>
         </label>
-        <input className="w-full px-2 text-black bg-gray-200 border-0 rounded-r-lg focus:outline-none" />
+        <input
+          className="w-full px-2 text-black bg-gray-200 border-0 rounded-r-lg focus:outline-none"
+          onFocus={onFocus}
+          onBlur={onBlur}
+        />
       </FlexRow>
 
       {ToolTip && (
