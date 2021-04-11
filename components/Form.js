@@ -49,8 +49,14 @@ Morbi faucibus volutpat sapien. Nam ac mauris at justo adipiscing facilisis.
   return (
     <form className="w-2/5">
       <FlexCol className="space-y-5">
-        <Field label="Name" toolTip={toolTip} />
-        <Field label="Family" toolTip={toolTip} />
+        <FlexRow className="space-x-5">
+          <Field label="Name" toolTip={toolTip} />
+          <Field label="Family" toolTip={toolTip} />
+        </FlexRow>
+        <FlexRow className="space-x-5">
+          <Field label="Email" toolTip={toolTip} />
+          <Field label="Tel" toolTip={toolTip} />
+        </FlexRow>
         <Field label="Address" toolTip={toolTip} />
       </FlexCol>
     </form>
