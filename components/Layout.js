@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { FlexCol } from './Flex';
+import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
   return (
@@ -18,7 +19,10 @@ const Layout = ({ children }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <body className="text-base h-screen">{children}</body>
+      <FlexCol className="text-base h-screen">
+        <Navbar />
+        {children}
+      </FlexCol>
     </>
   );
 };
