@@ -32,6 +32,14 @@ const Field = ({ label, ToolTip }) => {
   );
 };
 
+const Submit = ({ className }) => (
+  <input
+    type="submit"
+    value="Submit"
+    className={`z-10 w-40 py-2 text-base text-center text-green-800 border-2 border-green-300 rounded-lg cursor-pointer transition duration-300 hover:bg-green-300 text-white ${className}`}
+  />
+);
+
 const Form = () => {
   const ToolTip1 = () => (
     <div>
@@ -74,10 +82,13 @@ const Form = () => {
           <Field label="Tel" ToolTip={ToolTip1} />
         </FlexRow>
         <Field label="Address" ToolTip={ToolTip3} />
+        <FlexCenter>
+          <Submit className="mt-5" />
+        </FlexCenter>
       </FlexCol>
     </form>
   );
 };
 
 export default Form;
-export { Field };
+export { Field, Submit };
