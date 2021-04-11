@@ -21,7 +21,7 @@ const Field = ({ label, toolTip }) => {
       {toolTip && (
         <div
           className={
-            'p-3 text-sm text-gray-500 mt-1 w-full bg-gray-200 rounded-b-lg border-t-2 border-green-400 absolute ' +
+            'p-3 text-sm text-gray-500 mt-1 w-full bg-gray-200 rounded-b-lg border-t-2 border-green-400 transition duration-500 delay-1000 absolute ' +
             (tooltipIsActive ? 'opacity-100 z-20' : 'opacity-0 invisible')
           }
         >
