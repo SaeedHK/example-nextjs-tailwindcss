@@ -1,6 +1,4 @@
-This is a little [Next.js](https://nextjs.org/) project currently up and running here:
-[https://unkle-test-frontend.vercel.app/](https://unkle-test-frontend.vercel.app/)
-
+This is a little [Next.js](https://nextjs.org/) project.
 Here are the stacks I've used for this project:
 
 - [Next.js](https://nextjs.org/) that is a web framework based on React
